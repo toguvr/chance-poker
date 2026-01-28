@@ -7,8 +7,8 @@ import { SimulationControls } from '../components/SimulationControls'
 import { ProgressBar } from '../components/ProgressBar'
 import { ResultsPanel } from '../components/ResultsPanel'
 import { HistoryList } from '../components/HistoryList'
-import type { SimulationHistoryItem, SimulationInput, SimulationProgress, SimulationResult, SimulationMode } from '../lib/simTypes'
-import { exactEquity } from '../lib/exact'
+import type { SimulationHistoryItem, SimulationInput, SimulationProgress, SimulationResult, SimulationMode } from '../lib/poker/simTypes'
+import { exactEquity } from '../lib/poker/exact'
 import { playClick, playSuccess } from '../lib/sound'
 
 const MAX_HISTORY = 5

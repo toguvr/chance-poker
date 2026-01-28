@@ -1,11 +1,12 @@
-const labels = ['Sua mao', 'Mesa', 'Jogadores']
-
 type Props = {
   step: number
   onStepChange?: (step: number) => void
+  labels?: string[]
 }
 
-export const WizardSteps = ({ step, onStepChange }: Props) => (
+const defaultLabels = ['Sua mao', 'Mesa', 'Jogadores']
+
+export const WizardSteps = ({ step, onStepChange, labels = defaultLabels }: Props) => (
   <div className="wizard">
     {labels.map((label, index) => (
       <button

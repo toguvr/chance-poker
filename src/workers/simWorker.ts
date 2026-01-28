@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
-import { runMonteCarlo } from '../lib/monteCarlo'
-import type { SimulationInput, WorkerMessage, WorkerProgressMessage } from '../lib/simTypes'
+import { runMonteCarlo } from '../lib/poker/monteCarlo'
+import type { SimulationInput, WorkerMessage, WorkerProgressMessage } from '../lib/poker/simTypes'
 
 let cancelled = false
 

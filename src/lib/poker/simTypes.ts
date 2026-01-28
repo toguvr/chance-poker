@@ -1,4 +1,4 @@
-import type { Card } from './cards'
+import type { Card } from '../cards'
 import type { HandCategory } from './evaluator'
 
 export type SimulationMode = 'random' | 'range'

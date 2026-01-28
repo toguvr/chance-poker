@@ -1,5 +1,5 @@
-import { RANKS } from './cards'
-import type { Card, Rank, Suit } from './cards'
+import { RANKS } from '../cards'
+import type { Card, Rank, Suit } from '../cards'
 
 const rankIndex = (rank: Rank) => RANKS.indexOf(rank)
 

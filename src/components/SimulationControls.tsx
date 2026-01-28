@@ -1,4 +1,4 @@
-import type { SimulationMode } from '../lib/simTypes'
+import type { SimulationMode } from '../lib/poker/simTypes'
 
 type Props = {
   players: number

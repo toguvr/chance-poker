@@ -1,5 +1,5 @@
-import { ALL_CARDS } from './cards'
-import type { Card } from './cards'
+import { ALL_CARDS } from '../cards'
+import type { Card } from '../cards'
 import { drawRandom } from './combinatorics'
 import { compareHands, evaluate7 } from './evaluator'
 import { parseRange } from './range'

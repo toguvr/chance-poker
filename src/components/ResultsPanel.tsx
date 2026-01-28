@@ -1,5 +1,5 @@
-import type { SimulationResult } from '../lib/simTypes'
-import { HAND_LABELS } from '../lib/handNames'
+import type { SimulationResult } from '../lib/poker/simTypes'
+import { HAND_LABELS } from '../lib/poker/handNames'
 
 type Props = {
   result: SimulationResult | null

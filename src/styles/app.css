@@ -2,6 +2,35 @@
   min-height: 100vh;
 }
 
+.app-root {
+  min-height: 100vh;
+}
+
+.game-selector {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.game-selector label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.game-selector select {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
 .app-shell {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,8 +117,25 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.2s ease;
+}
+
+.card-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--accent-3);
+  color: #072423;
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
 .card-tile.sm {
@@ -271,6 +317,12 @@ button.primary:focus {
 .notice {
   color: var(--accent);
   font-size: 0.9rem;
+}
+
+.totals {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .progress {

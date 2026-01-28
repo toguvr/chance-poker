@@ -1,5 +1,5 @@
-import { cardRankValue, cardSuit } from './cards'
-import type { Card } from './cards'
+import { cardRankValue, cardSuit } from '../cards'
+import type { Card } from '../cards'
 import { choose5of7 } from './combinatorics'
 
 export type HandCategory =

@@ -1,5 +1,5 @@
 import { cardsToText } from '../lib/cards'
-import type { SimulationHistoryItem } from '../lib/simTypes'
+import type { SimulationHistoryItem } from '../lib/poker/simTypes'
 
 type Props = {
   history: SimulationHistoryItem[]

@@ -1,4 +1,4 @@
-import type { SimulationProgress } from '../lib/simTypes'
+import type { SimulationProgress } from '../lib/poker/simTypes'
 
 const formatMs = (ms: number) => {
   const secs = Math.max(0, Math.round(ms / 1000))

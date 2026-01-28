@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { evaluate5, evaluate7, compareHands } from '../evaluator'
-import type { Card } from '../cards'
+import type { Card } from '../../cards'
 
 const asCards = (cards: string[]) => cards as Card[]
 
