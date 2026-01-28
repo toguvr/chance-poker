@@ -1,3 +1,4 @@
+/// <reference lib="webworker" />
 import { runMonteCarlo } from '../lib/monteCarlo'
 import type { SimulationInput, WorkerMessage, WorkerProgressMessage } from '../lib/simTypes'
 

@@ -1,5 +1,5 @@
 import { SUIT_COLOR, SUIT_ICON } from '../lib/cards'
-import type { Card } from '../lib/cards'
+import type { Card, Suit } from '../lib/cards'
 
 const rankLabel: Record<string, string> = {
   T: '10',
@@ -22,7 +22,7 @@ type Props = {
 
 export const CardTile = ({ card, size = 'md', selected, blocked, ghost, onClick }: Props) => {
   const rank = card ? card[0] : '?'
-  const suit = card ? card[1] : 's'
+  const suit = card ? (card[1] as Suit) : 's'
   const color = SUIT_COLOR[suit]
 
   return (
