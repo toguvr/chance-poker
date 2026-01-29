@@ -102,8 +102,34 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+  gap: 12px;
+}
+
+.card-suit-row {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-suit-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-suit-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 42px;
   gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scroll-snap-type: x proximity;
+}
+
+.card-suit-grid .card-tile {
+  scroll-snap-align: start;
 }
 
 .card-tile {
@@ -176,12 +202,14 @@
 }
 
 .card-rank.red,
-.card-suit.red {
+.card-suit.red,
+.card-suit-label.red {
   color: #c43c3c;
 }
 
 .card-rank.black,
-.card-suit.black {
+.card-suit.black,
+.card-suit-label.black {
   color: #1d1d1d;
 }
 
@@ -461,8 +489,18 @@ button.primary:focus {
 }
 
 @media (max-width: 700px) {
-  .card-grid {
-    grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+  .card-suit-row {
+    grid-template-columns: 24px 1fr;
+    gap: 8px;
+  }
+
+  .card-suit-label {
+    font-size: 1rem;
+  }
+
+  .card-suit-grid {
+    grid-auto-columns: 36px;
+    gap: 6px;
   }
 
   .card-tile.sm {
